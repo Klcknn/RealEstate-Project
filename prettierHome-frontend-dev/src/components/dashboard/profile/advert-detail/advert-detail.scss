@@ -1,0 +1,21 @@
+@use "../../../../styles/variables" as v;
+
+
+.advert-details-container{
+    background-color: v.$color5-light;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 3px v.$color5;
+    
+    .advert-detail-title{
+        font-size: 1.4rem;
+        margin-left: 16px;
+        color: v.$color7;
+    }
+    .property-key-name{
+        font-size: 0.9rem;
+        margin: 7px;
+        margin-left: 15px;
+    }
+}

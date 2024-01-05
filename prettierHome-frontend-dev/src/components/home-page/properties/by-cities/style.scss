@@ -1,0 +1,78 @@
+@use "/src/styles/variables" as v;
+
+.city-statistics {
+
+  h5 {
+    color: v.$color1;
+  }
+
+  .cities-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .by-cities-card {
+      color: white;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover {
+        .by-cities-card-img {
+          transform: scale(1.2);
+        }
+
+        .statistics {
+          backdrop-filter: blur(1px);
+          background-color: rgba(v.$color4, 0.1);
+
+          .ad-quantity {
+            transform: scale(2);
+            color: v.$color7;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &,
+      .by-cities-card-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .statistics {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 50%;
+        background-color: rgba(v.$color11, 0.5);
+        color: white;
+        backdrop-filter: blur(3px);
+        font-size: 20px;
+        transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+
+        h3 {
+          margin: 0;
+        }
+
+        .ad-quantity {
+          transition: transform 0.3s ease, color 0.3s ease;
+        }
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,24 @@
+@use "../styles/variables" as v;
+
+// ADMINLAYOUT COL YAPILARI
+.side-col {
+  // height: 100vh;
+  width: auto !important;
+
+  // @media screen and  (max-width: 778px) {
+  //   display: none !important;
+  // }
+    
+  }
+
+.contents-col {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: auto;
+  //background-color: v.$color6; //input bg-color belli olmuyor diye sildim
+  padding: 0 !important; // primeReact col yapisina 0.5rem padding verdiginden sayfa yapisini bozuyordu. sifir atadik
+}
+
+
+

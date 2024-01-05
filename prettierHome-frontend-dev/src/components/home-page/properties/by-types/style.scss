@@ -1,0 +1,67 @@
+@use "/src/styles/variables" as v;
+
+.type-properties {
+  h5 {
+    color: v.$color1;
+  }
+}
+
+.by-types-card {
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+  height: 200px;
+  border-radius: 18px !important;
+  cursor: pointer;
+}
+
+.by-types-card-img {
+  width: 300px;
+  height: 200px;
+  border-radius: 18px !important;
+  object-fit: cover;
+  display: block;
+}
+
+.by-types-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  pointer-events: none;
+}
+
+.by-types-card-anchor {
+  margin-top: 0.4rem !important;
+  font-size: 1.4rem !important;
+  color: white !important;
+}
+
+.by-type-count {
+  background-color: white !important;
+  color: black !important;
+  font-size: 1rem !important;
+  width: 28px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.by-types-card:hover {
+  .by-types-card-anchor-link {
+    text-decoration: underline;
+  }
+}

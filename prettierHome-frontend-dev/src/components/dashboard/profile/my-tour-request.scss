@@ -1,0 +1,294 @@
+@use "../../../styles/variables" as v;
+
+.tourrequest-container {
+  width: 90%!important;
+  .tr-datatable-wrapper {
+    .card {
+      border: none;
+      border-radius: 15px !important;
+      overflow: hidden;
+
+      thead tr {
+        font-size: 18px;
+
+        th {
+          padding-bottom: 20px;
+          background: none;
+
+          &:first-child {
+            padding-left: 5rem;
+          }
+
+          padding-bottom: 20px !important;
+
+          &:not(:first-child) {
+            .p-column-header-content {
+              display: flex;
+              justify-content: center;
+              min-width: 100px;
+            }
+          }
+        }
+      }
+
+      tbody tr {
+        &:nth-child(even) {
+          background-color: v.$color6;
+        }
+
+        &:nth-child(odd) {
+          background-color: v.$color12;
+        }
+
+        .p-tag {
+          color: v.$color6;
+          border-radius: 7px;
+          padding: 3px;
+          width: 90px;
+          text-align: center;
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+
+        td {
+          border-bottom: 8px solid white;
+          padding: 1rem 0;
+          
+
+          &:first-child {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding-left: 1rem;
+          }
+
+          &:last-child {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          &:not(:first-child) {
+            @media screen and (min-width: 768px) {
+              div {
+                display: flex;
+                justify-content: center!important;
+                align-items: center;
+              }
+            }
+          }
+
+          .operationsButton {
+            .btn-link {
+              color: white;
+              margin-left: 5px;
+              background-color: v.$color8;
+              border: 1px solid v.$color8;
+              border-radius: 50%;
+              line-height: 1.9rem;
+
+              &:first-child {
+                &:hover {
+                  border-color: v.$color-error-dark;
+                  background-color: v.$color-error-light;
+                }
+              }
+
+              &:last-child {
+                &:hover {
+                  border-color: v.$color-success-dark;
+                  background-color: v.$color-success-light;
+                }
+              }
+            }
+
+            svg {
+              font-size: 20px;
+            }
+
+            // @media screen and (max-width: 991px) {
+            //   flex-flow: wrap;
+            // }
+          }
+        }
+      }
+
+      .p-paginator {
+        gap: 10px;
+
+        .p-paginator-current {
+          display: inline-flex;
+
+          @media screen and (min-width: 768px) {
+            display: none !important;
+          }
+        }
+
+        .p-paginator-pages {
+          display: none;
+
+          @media screen and (min-width: 768px) {
+            display: inline-flex;
+          }
+        }
+
+        .p-paginator-current {
+          display: inline-flex;
+        }
+
+        button {
+          margin: 3px;
+          background-color: v.$color8;
+          border-radius: 80%;
+          color: v.$color6;
+
+          &:disabled {
+            background-color: v.$color2;
+
+            &:hover {
+              background-color: v.$color2;
+              color: v.$color6;
+              box-shadow: none;
+            }
+          }
+
+          &:hover {
+            background-color: v.$color4;
+            box-shadow: 0 1px 4px v.$color8;
+            color: v.$color2;
+          }
+
+          &:focus {
+            background-color: v.$color4-light;
+            color: v.$color7;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .tr-datatable-wrapper .tr-datatable .p-datatable-tbody>tr>td .p-column-title {
+    display: none;
+  }
+
+  .p-toast-icon-close {
+    background: none;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: v.$color2-light;
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-thead>tr>th,
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tfoot>tr>td {
+      display: none !important;
+    }
+
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tbody>tr>td {
+      text-align: left;
+      display: block;
+      width: 100%;
+      float: left;
+      clear: left;
+      border: 0 none;
+    }
+
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tbody>tr>td .p-column-title {
+      padding: 0.4rem;
+      min-width: 30%;
+      display: inline-block;
+      margin: -0.4em 1em -0.4em -0.4rem;
+      font-weight: bold;
+    }
+
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tbody>tr>td:last-child {
+      border-bottom: 1px solid var(--surface-d);
+    }
+  }
+}
+
+.getproperty{
+  display: flex;
+  flex-direction: column;
+  padding: "0 30px";
+  gap: 20px;
+
+  .image {
+    border-radius: 10px;
+    overflow: hidden;
+
+    .ad-thumbnail {
+      height: 200px;
+      width: 100%;
+
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: nowrap;
+
+    p {
+      margin-bottom: 3px;
+
+      &:not(:first-child) {
+        color: v.$color2;
+      }
+
+      &:first-child {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+
+    a {
+
+      color: v.$color2;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+
+      &:hover {
+
+        color: v.$color7;
+        font-weight: 500;
+
+      }
+
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
+    .image {
+      width: fit-content;
+
+      .ad-thumbnail {
+        height: 100px;
+        width: 150px;
+
+        img {
+          height: 100px;
+          width: 150px;
+        }
+      }
+    }
+
+    .text {
+      min-width: 200px;
+    }
+  }
+}

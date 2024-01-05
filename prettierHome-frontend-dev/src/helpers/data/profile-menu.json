@@ -1,0 +1,25 @@
+{
+    "admin": [
+        { "title": "My Profile", "link": "/my-profile" },
+        { "title": "My Adverts", "link": "/my-adverts" },
+        { "title": "My Favorites", "link": "/my-favorites" },
+        { "title": "My Tour Requests", "link": "/my-tour-requests" },
+        { "title": "Dashboard", "link": "/dashboard" }
+        
+      ],
+      "manager": [
+        { "title": "My Profile", "link": "/my-profile" },
+        { "title": "My Adverts", "link": "/my-adverts" },
+        { "title": "My Favorites", "link": "/my-favorites" },
+        { "title": "My Tour Requests", "link": "/my-tour-requests" },
+        { "title": "Dashboard", "link": "/dashboard" }
+     
+      ],
+      "customer": [
+        { "title": "My Profile", "link": "/my-profile" },
+        { "title": "My Adverts", "link": "/my-adverts" },
+        { "title": "My Favorites", "link": "/my-favorites" },
+        { "title": "My Tour Requests", "link": "/my-tour-requests" }
+       
+      ]
+}

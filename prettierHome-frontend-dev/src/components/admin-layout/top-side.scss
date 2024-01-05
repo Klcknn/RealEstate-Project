@@ -1,0 +1,37 @@
+@use "../../styles/variables" as v;
+
+.top-side {
+  background-color: v.$color5;
+  padding: 5px;
+  z-index: 1001;
+  position: sticky;
+  top: 0;
+
+  .row {
+    display: flex;
+    align-items: center;
+
+    .col {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+
+      .menu-icon {
+        background: v.$color6;
+        border: 1px solid v.$color6;
+        border-radius: 10%;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        color: v.$color1;
+        margin-left: 10px;
+      }
+
+      .home-col {
+        color: v.$color2;
+        margin-left: 10px;
+      }
+    }
+  }
+}

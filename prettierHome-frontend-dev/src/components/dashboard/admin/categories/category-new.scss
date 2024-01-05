@@ -1,0 +1,37 @@
+@use "../../../../styles/variables" as v;
+
+.category-form{
+
+  .category-new {
+
+    width: 85% !important;
+
+  }
+
+  @media screen and (max-width: 991px) {
+    .button-component{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+
+  .new-property-key{
+
+    width: 93%;
+
+    fieldset{
+      legend{
+        width: 90%;
+        float: none !important;
+        text-align: center;
+      }
+    }
+
+    .property-key-container{
+     // background-color: #834545;
+      width: 87% !important;
+    }
+  }
+}

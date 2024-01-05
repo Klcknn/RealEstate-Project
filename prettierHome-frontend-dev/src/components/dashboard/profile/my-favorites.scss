@@ -1,0 +1,194 @@
+@use "../../../styles/variables" as v;
+
+.favorite-container {
+  width: 90%!important;
+  .tr-datatable-wrapper {
+    .card {
+      border: none;
+      border-radius: 15px !important;
+      overflow: hidden;
+
+      thead tr {
+        font-size: 18px;
+
+        th {
+          padding-bottom: 20px;
+          background: none;
+
+          &:first-child {
+            padding-left: 5rem;
+          }
+
+          padding-bottom: 20px !important;
+
+          &:not(:first-child) {
+            .p-column-header-content {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      tbody tr {
+        &:nth-child(even) {
+          background-color: v.$color6;
+        }
+
+        &:nth-child(odd) {
+          background-color: v.$color12;
+        }
+
+        td {
+          border-bottom: 8px solid white;
+          min-width: 100px;
+          padding: 1rem 0;
+
+          &:first-child {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding-left: 1rem;
+          }
+
+          &:last-child {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          &:not(:first-child) {
+            @media screen and (min-width: 768px) {
+              // min-width: 100px;
+              div {
+                display: flex;
+                justify-content: center!important;
+                align-items: center;
+              }
+            }
+          }
+
+          .operationsButton {
+            .btn-link {
+              color: white;
+              margin-left: 5px;
+              background-color: v.$color8;
+              border: 1px solid v.$color8;
+              border-radius: 50%;
+              line-height: 1.9rem;
+
+              &:hover {
+                border-color: v.$color-error-dark;
+                background-color: v.$color-error-light;
+              }
+            }
+            svg {
+              font-size: 20px;
+            }
+
+            // @media screen and (max-width: 991px) {
+            //   flex-flow: wrap;
+            // }
+          }
+        }
+      }
+    }
+  }
+
+  .tr-datatable-wrapper .tr-datatable .p-datatable-tbody>tr>td .p-column-title {
+    display: none;
+  }
+
+  .p-toast-icon-close {
+    background: none;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: v.$color2-light;
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-thead>tr>th,
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tfoot>tr>td {
+      display: none !important;
+    }
+
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tbody>tr>td {
+      text-align: left;
+      display: block;
+      width: 100%;
+      float: left;
+      clear: left;
+      border: 0 none;
+    }
+
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tbody>tr>td .p-column-title {
+      padding: 0.4rem;
+      min-width: 30%;
+      display: inline-block;
+      margin: -0.4em 1em -0.4em -0.4rem;
+      font-weight: bold;
+    }
+
+    .tr-datatable-wrapper .p-datatable.tr-datatable .p-datatable-tbody>tr>td:last-child {
+      border-bottom: 1px solid var(--surface-d);
+    }
+  }
+}
+
+// takes style from my-tour-request.scss
+// .getproperty {
+//   display: flex;
+//   align-items: center;
+//   justify-content: start;
+//   column-gap: 10px;
+//   margin-left: 30px;
+
+//   .image {
+//     img {
+//       border-radius: 15px;
+//       margin-right: 10px;
+//       width: 150px;
+//       height: 100px;
+//       object-fit: cover;
+//     }
+//   }
+
+//   .text {
+//     @media screen and (min-width: 768px) {
+//       min-width: 250px;
+//     }
+
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: start;
+//     flex-wrap: nowrap;
+//     max-height: 40px;
+
+//     p {
+//       margin-bottom: 3px;
+
+//       &:not(:first-child) {
+//         color: v.$color2;
+//       }
+
+//       &:first-child {
+//         font-weight: bold;
+//         font-size: 18px;
+//       }
+//     }
+
+//     a {
+//       color: v.$color2;
+//       font-weight: 700;
+//       font-size: 18px;
+//       text-decoration: none;
+
+//       &:hover {
+//         color: v.$color7;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+//  }

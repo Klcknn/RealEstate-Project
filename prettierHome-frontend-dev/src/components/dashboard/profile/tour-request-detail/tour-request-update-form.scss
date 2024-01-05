@@ -1,0 +1,111 @@
+@use "../../../../styles/variables" as v;
+.tour-request-update-container {
+  padding: 25px;
+  max-width: 650px;
+
+  .tour-request-update-form {
+    .tour-request-update-row-title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .tour-request-update-col-title {
+        color: v.$color7;
+        flex: 0 0 70%;
+        text-align: start;
+      }
+      .tour-request-update-col-price {
+        color: v.$color7;
+        flex: 0 0 30%;
+        text-align: end;
+        font-weight: 800;
+      }
+    }
+    .tour-request-update-col-location {
+      color: v.$color8;
+      margin-bottom: 0;
+    }
+
+    .tour-request-input-row {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .tour-request-input-col {
+        width: 100%;
+        min-width: 150px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+
+        .tour-request-input-date {
+          border-bottom: 2px solid v.$color7;
+          width: 90%;
+
+          .form-control {
+            border: 0;
+            &:active,
+            &:focus {
+              box-shadow: 0 0 4px v.$color9;
+            }
+          }
+        }
+        .tour-request-input-time {
+          width: 90%;
+          border-bottom: 2px solid v.$color7;
+
+          .form-control {
+            border: 0;
+
+            &:active,
+            &:focus {
+              box-shadow: 0 0 4px v.$color9;
+            }
+          }
+        }
+      }
+    }
+
+    .tour-request-update-button-row {
+      max-width: 80%;
+      padding: 20px;
+      min-width: 150px;
+
+      .tour-request-update-button-col {
+        text-align: end;
+
+        .tour-request-update-button-calcel {
+          width: 100%;
+          border-radius: 7px;
+          background-color: v.$color9;
+          border: 0;
+          color: v.$color7;
+          font-size: 1.3rem;
+          padding: 2px;
+          min-width: 80%;
+          &:active,
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 3px v.$color8;
+          }
+        }
+        .tour-request-update-button-update {
+          width: 100%;
+          border-radius: 7px;
+          background-color: v.$color4;
+          border: 0;
+          color: v.$color7;
+          font-size: 1.3rem;
+          padding: 2px;
+          min-width: 80%;
+          &:active,
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 3px v.$color1;
+          }
+        }
+      }
+    }
+  }
+}

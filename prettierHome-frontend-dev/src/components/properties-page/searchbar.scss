@@ -1,0 +1,52 @@
+@use "../../styles/variables" as v;
+
+.searchbar {
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  width: 30%;
+  padding: 3rem;
+  font-weight: lighter;
+  font-size: 0.9rem;
+
+  input,
+  select {
+    border: 2px solid v.$color5;
+    background-color: inherit;
+    border-radius: 0.6rem;
+  }
+
+  button {
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+  }
+}
+
+.filter-dropdown {
+  background-color: #f5f5f5;
+  padding-top: 0px !important;
+
+  .filter {
+    background-color: #f5f5f5;
+    padding: 3rem;
+    font-weight: lighter;
+    font-size: 0.9rem;
+
+    input,
+    select {
+      border: 2px solid v.$color5;
+      background-color: inherit;
+      border-radius: 0.6rem;
+    }
+
+    button {
+      border-radius: 0.6rem;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      color: white;
+    }
+  }
+}

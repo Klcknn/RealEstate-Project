@@ -1,0 +1,115 @@
+@use "../../styles/variables" as v;
+
+.login-card {
+  box-shadow: 0px 10px 30px -10px v.$color2;
+  padding: 2rem;
+  background-image: linear-gradient(to top, v.$color11, v.$color9);
+  border-radius: 7px !important;
+
+  .login-form {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+      background-color: v.$color6;
+      border: 1px solid v.$color9;
+      padding: 10px;
+      &:active,&:focus {
+        box-shadow: 0 0 3px v.$color7;
+        transition: border 0.2s;
+      }
+      
+    }
+    .input-group {
+      position: relative;
+
+      .input-group-text {
+        border-radius: 5px;
+        background-color: v.$color6;
+        border: none;
+        border-right: 3px solid v.$color9;
+        border-top: 1px solid v.$color9;
+        border-bottom: 1px solid v.$color9;
+        border-left: 1px solid v.$color9;
+        color: v.$color2-light;
+
+      }
+
+      .user-input {
+        border-radius: 0 5px 5px 0 !important;
+      }
+
+      .invalid-feedback {
+        font-size: 0.9rem;
+        font-weight: normal;
+        position: absolute;
+        bottom: -20px;
+        right: -45px;
+        color: rgb(232, 63, 2);
+      }
+      .is-valid{
+        border-color:v.$color6;
+      }
+
+    }
+
+    .login-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+
+      button {
+        padding: 4px;
+        font-size: 1.4rem;
+        background-color: v.$color4;
+        color: v.$color2;
+        border: none;
+        box-shadow: -10px 10px 10px -8px v.$color2-light;
+        border-radius: 5px;
+      }
+    }
+
+    .forget-password {
+      text-align: right;
+      font-size: 1.1rem;
+      cursor: pointer;
+
+      a {
+        color: v.$color2-light;
+        text-decoration: none;
+        &:hover {
+          color: v.$color2;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 1rem;
+      }
+    }
+
+    .register {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+      }
+
+      a {
+        color: v.$color2-light;
+        &:hover {
+          color: v.$color2;
+        }
+      }
+    }
+  }
+}

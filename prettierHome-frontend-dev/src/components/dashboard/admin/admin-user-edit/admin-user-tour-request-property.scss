@@ -1,0 +1,311 @@
+@use "../../../../styles/variables" as v;
+
+.admin-user-tour-request-container {
+  width: 100%!important;
+  padding:0;
+ 
+
+    .search-tour-request {
+
+      //background-color: brown !important;
+      margin-bottom: 50px;
+      display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+      span{
+
+        display: flex !important;
+        width: 100% !important;
+        position: relative !important;
+        justify-content: flex-end !important;
+
+        input{
+          border-radius: 8px;
+          background-color: v.$color5-light;
+          padding: 0.6rem;
+          border: none!important;
+        }
+
+        .btnSearch{
+          background-color: v.$color1;
+          border: none !important;
+          width: 50px !important;
+          position: absolute !important;
+          right: 0 !important;
+          top: 0 !important;
+          bottom: 0 !important;
+          border-radius: 10px;
+
+          &:hover{
+            background-color: #f3972b;
+          }
+        }
+      }
+
+      .btnClearSearch{
+        background-color: v.$color1;
+        border: none !important;
+        border-radius: 10px;
+        color: v.$color6;
+        margin: 0 5px;
+        &:hover{
+          background-color: #f3972b;
+        }
+      }
+    }
+
+
+  .tr-datatable-wrapper {
+    .card {
+      border: none;
+      border-radius: 15px !important;
+      overflow: hidden;
+
+      thead tr {
+        font-size: 16px;
+
+        th {
+          padding-bottom: 10px;
+          background: none;
+
+          &:first-child {
+            padding-left: 5rem;
+          }
+
+          padding-bottom: 20px !important;
+
+          &:not(:first-child) {
+            .p-column-header-content {
+              display: flex;
+              justify-content: center;
+              // min-width: 100px;
+            }
+          }
+        }
+      }
+
+      tbody tr {
+        font-size: 14px;
+        &:nth-child(even) {
+          background-color: v.$color6;
+        }
+
+        &:nth-child(odd) {
+          background-color: v.$color12;
+        }
+
+        .p-tag {
+          color: v.$color6;
+          border-radius: 7px;
+          padding: 3px;
+          width: 70px;
+          text-align: center;
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+
+        td {
+          border-bottom: 8px solid white;
+          padding: 8px 0;
+          
+
+          &:first-child {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding-left: 1rem;
+          }
+
+          &:last-child {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          &:not(:first-child) {
+            @media screen and (min-width: 768px) {
+              div {
+                display: flex;
+                justify-content: center!important;
+                align-items: center;
+              }
+            }
+          }
+
+          .operationsButton {
+            .btn-link {
+              color: white;
+              margin-left: 5px;
+              background-color: v.$color8;
+              border: 1px solid v.$color8;
+              line-height: 1.7rem;
+              
+              
+
+              &:first-child {
+                border-radius: 50%;
+                &:hover {
+                  border-color: v.$color-error-dark;
+                  background-color: v.$color-error-light;
+                }
+              }
+
+              &:last-child {
+                border-radius: 50%;
+                &:hover {
+                  border-color: v.$color-success-dark;
+                  background-color: v.$color-success-light;
+                }
+              }
+            }
+
+            svg {
+              font-size: 16px;
+            }
+
+            // @media screen and (max-width: 991px) {
+            //   flex-flow: wrap;
+            // }
+          }
+        }
+      }
+
+      .p-paginator {
+        gap: 10px;
+
+        .p-paginator-current {
+          display: inline-flex;
+
+          @media screen and (min-width: 768px) {
+            display: none !important;
+          }
+        }
+
+        .p-paginator-pages {
+          display: none;
+
+          @media screen and (min-width: 768px) {
+            display: inline-flex;
+          }
+        }
+
+        .p-paginator-current {
+          display: inline-flex;
+        }
+
+        button {
+          margin: 3px;
+          background-color: v.$color8;
+          border-radius: 80%;
+          color: v.$color6;
+
+          &:disabled {
+            background-color: v.$color2;
+
+            &:hover {
+              background-color: v.$color2;
+              color: v.$color6;
+              box-shadow: none;
+            }
+          }
+
+          &:hover {
+            background-color: v.$color4;
+            box-shadow: 0 1px 4px v.$color8;
+            color: v.$color2;
+          }
+
+          &:focus {
+            background-color: v.$color4-light;
+            color: v.$color7;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.getproperty{
+  display: flex;
+  flex-direction: column;
+  padding: "0 30px";
+  gap: 20px;
+
+  .image {
+    border-radius: 10px;
+    overflow: hidden;
+
+    .ad-thumbnail {
+      height: 200px;
+      width: 100%;
+
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: nowrap;
+
+    p {
+      margin-bottom: 3px;
+
+      &:not(:first-child) {
+        color: v.$color2;
+      }
+
+      &:first-child {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+
+    a {
+
+      color: v.$color2;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+
+      &:hover {
+
+        color: v.$color7;
+        font-weight: 500;
+
+      }
+
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
+    .image {
+      width: fit-content;
+
+      .ad-thumbnail {
+        height: 100px;
+        width: 150px;
+
+        img {
+          height: 100px;
+          width: 150px;
+        }
+      }
+    }
+
+    .text {
+      min-width: 180px;
+    }
+  }
+}

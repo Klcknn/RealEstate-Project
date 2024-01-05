@@ -1,0 +1,36 @@
+@use "../../../../styles/variables" as v;
+
+.p-fieldset {
+  border-top: 1px solid v.$color4;
+  width: 90%;
+  position: relative;
+  padding: 3px !important;
+  border-radius: 0;
+  margin-left: 40px;
+  
+.p-fieldset-content{
+  width: 100%;
+}
+  .p-fieldset-toggleable {
+    padding: 3px !important;
+    background-color: red;
+  }
+
+  .p-fieldset-legend {
+    font-size: 1rem;
+    width: 150px;
+    margin-left: 100px;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    padding: 3px !important;
+    border: 1px solid v.$color4;
+    background-color: white;
+   
+  }
+  
+  .p-fieldset-legend a {
+    padding: 0;
+    text-decoration: none!important;
+  }
+}

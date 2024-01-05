@@ -1,0 +1,37 @@
+@use "../../../../styles/variables" as v;
+
+
+.property-key-edit-form{
+
+  .property-key-new {
+    
+    width: 87% !important;
+  }
+
+  
+  .button-component{
+
+    @media screen and (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px !important;
+    }
+
+    .dynamic-button{
+
+      @media screen and (max-width: 991px) {
+        padding: 10px 25px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg{
+          margin-right: 4px;
+        }
+      }
+      
+    }
+  }
+
+}

@@ -1,0 +1,70 @@
+@use "../../../styles/variables" as v;
+
+.category-edit-page-container{
+  width: 90%!important;
+
+
+    .category-edit-page-row1{
+
+        .col-bir{
+          // flex-direction: column;
+          margin-bottom: 3rem;
+
+
+            .col-bir-form{
+              width: 100%;
+              display: flex!important;
+              justify-content: center!important;
+              align-items: center!important;
+              flex-direction: column!important;
+            
+
+              .button-component{
+
+                @media screen and (max-width: 991px) {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 20px !important;
+                }
+            
+                button{
+            
+                  @media screen and (max-width: 991px) {
+                    padding: 10px 25px !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+            
+                    svg{
+                      margin-right: 4px;
+                    }
+                  }
+                  
+                }
+              }
+          
+            }
+
+        }
+
+    }
+    .category-edit-page-row2{
+      
+
+        .new-edit-fielset{
+            width: 100% ;
+
+            .p-fieldset{
+                margin-top: 2rem;
+                margin-right: 40px !important;
+
+                @media screen and (max-width: 991px) {
+                  margin-left: 15px !important;
+                  margin-right: 5px !important;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,155 @@
+@use "../../../../styles/variables" as v;
+
+.admin-tour-request-detail-container{
+
+    width: 90%!important;
+
+
+    .row{
+
+        display: flex!important;
+        flex-direction: row;
+        justify-content: space-around!important;
+        align-items: center;
+
+        @media screen and (max-width: 1199px) {
+            flex-direction: column;
+        }
+
+        .image {
+            text-align: center;
+   
+            .ad-thumbnail {
+              height: 300px;
+              width: 400px;
+                
+              img {
+                height: 300px;
+                width: 400px;
+                border-radius: 15px;
+            } 
+            }
+
+            @media screen and (max-width: 991px) {
+                .ad-thumbnail {
+                  height: 250px;
+                  width: 300px;
+                    
+                  img {
+                    height: 250px;
+                    width: 300px;
+                    border-radius: 15px;
+                } 
+                }
+            }
+
+
+
+        }
+
+        .info{
+
+            .r-title{
+                .c-price{
+                    display: flex!important;
+                    justify-content: center!important;
+                    align-items: center;
+                    margin-bottom: 35px;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    .c-title{
+                        display: flex!important;
+                        flex-direction: row;
+                        justify-content: center!important;
+                        align-items: center;
+
+                        column-gap: 15px;
+                    }
+                    
+                    
+                }
+
+            }
+
+            .row2{
+
+                .form-group-date-time{
+                    width: 90%;
+                    border-bottom: 2px solid v.$color7;
+    
+                    .form-control {
+                    border: 0;
+    
+                    &:active,
+                    &:focus {
+                        box-shadow: 0 0 4px v.$color9;
+                    }
+                    }
+                    .form-text{
+                        color: v.$color2;
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+
+                }
+
+                @media screen and (max-width: 1199px) {
+
+                   .col{
+                       display: flex!important;
+                       flex-direction: row;
+                       justify-content: center!important;
+                       align-items: center;
+                   }
+
+                }
+            }
+
+            
+
+
+            .row3{
+               
+
+                .delete-btn{
+                    width: 90%;
+                    border-radius: 7px;
+                    background-color: v.$color4;
+                    border: 0;
+                    color: v.$color7;
+                    font-size: 1.3rem;
+                    padding : 2px;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                      box-shadow: 0 0 3px v.$color1;
+                    }
+                }
+
+                @media screen and (max-width: 1199px) {
+
+                    .col{
+                        display: flex!important;
+                        flex-direction: row;
+                        justify-content: center!important;
+                        align-items: center;
+                    }
+ 
+                 }
+
+                
+
+
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+}

@@ -1,0 +1,19 @@
+@use "../../styles/variables" as v;
+
+footer {
+  background-color: v.$color2;
+  padding-top: 50px;
+  color: v.$color5;
+
+  a.nav-link {
+    padding: 8px 0px;
+    color: v.$color5;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+}

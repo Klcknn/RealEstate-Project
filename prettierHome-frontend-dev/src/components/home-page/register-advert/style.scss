@@ -1,0 +1,45 @@
+.main-box {
+  padding: 72px;
+  position: relative;
+
+  .left-side-advert {
+    margin-left: 5rem;
+    button {
+      padding: 12px 40px;
+      border-radius: 10px;
+      background-color: #6e6e6e;
+      color: #d9d9d9;
+      border: none;
+    }
+  }
+
+  .img {
+    position: absolute;
+
+    left: 65%;
+    top: 9%;
+
+    @media screen and (max-width: 1400px) {
+      left: 58%;
+    }
+    @media screen and (max-width: 1300px) {
+      left: 58%;
+    }
+
+    @media screen and (max-width: 1199.9px) {
+      left: 50%;
+    }
+  }
+}
+
+.circle {
+  background-color: #f7c181 !important;
+  border-radius: 50% !important;
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

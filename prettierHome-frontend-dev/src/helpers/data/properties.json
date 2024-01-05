@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$550,000"
+  },
+  {
+    "id": 2,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$120,000"
+  },
+  {
+    "id": 3,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$450,000"
+  },
+  {
+    "id": 4,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$180,000"
+  },
+  {
+    "id": 5,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$835,000"
+  },
+  {
+    "id": 6,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$150,000"
+  },
+  {
+    "id": 7,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$230,000"
+  },
+  {
+    "id": 8,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$430,000"
+  },
+  {
+    "id": 9,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$740,000"
+  },
+  {
+    "id": 10,
+    "title": "Luxury villa in Central Park",
+    "location": "Pendik, istanbul",
+    "price": "$530,00"
+  }
+]

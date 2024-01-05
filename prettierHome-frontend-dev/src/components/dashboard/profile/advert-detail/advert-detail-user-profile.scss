@@ -1,0 +1,69 @@
+@use "../../../../styles/variables.scss" as v;
+
+.advert-tour-request-profile-container {
+  background-color: v.$color11;
+  border-radius: 15px;
+  padding: 30px!important;
+  min-width: 200px;
+  box-shadow: 0 0 3px v.$color9;
+
+
+  .advert-tour-request-profile-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: large;
+  
+
+
+    .advert-detail-btn-link {
+      text-decoration: none;
+      color: v.$color2;
+
+    }
+    .advert-detail-mail-send-btn{
+        background-color: v.$color7;
+        width: 70%;
+        border:none;
+        border-radius: 7px;
+        color:v.$color6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .advert-detail-mail-send-icon{
+            color:v.$color1;
+            margin-right: 5px;
+        }
+    }
+
+    .advert-detail-user-pic {
+      box-shadow: 0 0 3px v.$color7;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      padding: 0;
+     
+    }
+    .advert-detail-mail-btn{
+        border:none;
+        background-color: v.$color7;
+        width: 70%;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       .advert-detail-mail-link{
+        text-decoration: none;
+        color: v.$color6;  
+        .advert-detail-mail-send-icon{
+            color:v.$color1;
+            margin-right: 5px;
+        }
+    }  
+   
+    }
+   
+  }
+}

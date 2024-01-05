@@ -1,0 +1,169 @@
+@use "../../../../styles/variables" as v;
+
+.admin-contact-message-container {
+  width: 80% !important;
+  min-height: 420px !important;
+  justify-content: space-between !important;
+
+  .advert-types-page-search-div {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media screen and (max-width: 500px) {
+      display: block;
+      .search-input {
+        margin-bottom: 10px;
+        width: 100% !important;
+      }
+      .add-new-btn {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 15px;
+      }
+      .search-icon {
+        right: 0 !important;
+      }
+      .add-new-btn {
+        margin-left: 0 !important;
+      }
+    }
+
+    .search-input {
+      input {
+        border-radius: 10px;
+        padding: 12px;
+        border-right: 0;
+        border-color: gray;
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      .clear-wrapper {
+        background: none;
+        border: 1px solid gray;
+        border-left: 0;
+        .clear-btn {
+          border: none;
+          border-radius: 50%;
+          padding: 6px 8px;
+          color: black;
+          &:hover {
+            background: none;
+            color: v.$color-error-light;
+            transform: scale(1.2);
+          }
+        }
+      }
+      .search-button {
+        border-radius: 10px;
+        background-color: v.$color8;
+        color: white;
+        &:hover {
+          background-color: v.$color7;
+          color: white;
+        }
+      }
+      button {
+        border: 1px solid gray;
+        padding: 10px 15px;
+      }
+     
+    }
+    .add-new-btn {
+      padding: 12px 15px;
+      border-radius: 10px;
+      margin-left: 5px;
+      @media screen and (max-width: 856px) {
+        padding: 15px;
+      }
+    }
+  }
+ .accordion{
+  .accordion-item{
+    border-radius: 11px;
+    border:0;
+    .accordion-header{
+      margin-bottom: 5px;
+      
+      .accordion-button {
+        display: flex !important;
+        background-color: v.$color12!important; 
+        border-radius: 10px;
+        border-top-left-radius:10px!important;
+        border-top-right-radius:10px!important;
+    
+        &:focus{
+        box-shadow: 0 0 2px 2px v.$color8!important;
+        }
+      
+        .span-one{
+        width: 600px;
+        text-align: start;
+        }
+        .span-two{
+          width: 400px;
+          text-align: start;
+        }
+        .accordion-button::after {
+         
+          margin-left: 14px !important;
+      
+        }
+    
+      }
+    
+    }
+  }
+ }
+ 
+}
+.admin-contact-message-pagination{
+  display: inline-flex;
+  gap: 10px;
+
+  @media screen and (max-width: 400px) {
+    display: inline-flex;
+    gap: 5px;
+  }
+  &.disabled {
+    background-color: v.$color1!important;  
+  }
+    .page-link {
+      margin: 3px !important;
+      background-color: v.$color8;
+      border-radius: 85% !important;
+      color: v.$color6;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      @media screen and (max-width: 400px) {
+       
+        width: 30px;
+        height: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+      }
+    
+      &:hover {
+        background-color: v.$color4;
+        color: v.$color2;
+        box-shadow: 0 1px 1px v.$color8;
+      }
+
+      &:focus {
+        background-color: v.$color4;
+        color: v.$color2;
+        box-shadow: none;
+      }
+    }
+}

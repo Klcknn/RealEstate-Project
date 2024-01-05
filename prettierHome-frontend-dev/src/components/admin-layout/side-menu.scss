@@ -1,0 +1,84 @@
+@use "../../styles/variables" as v;
+
+
+.side-menu {
+
+    height: 100%;
+    background-color: v.$color1;
+    padding: 30px 10px ;
+
+
+    .navvvv {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+  
+  
+      .active-link {
+        background-color: v.$color2;
+        color: v.$color1 !important; 
+        padding: 5px 50px ;
+        text-decoration: none;
+        transition: all 0.4s;
+        border-radius: 10px;
+        margin-bottom: 2px; 
+        margin-top: 1px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: v.$color2;
+          color: v.$color1;
+          
+        }
+       
+        
+      }
+    
+      .standart-link {
+        // width: 100%;
+        padding: 5px 50px ;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-bottom: 0; 
+        margin-top: 1px;
+        color: v.$color2;
+        
+      
+        &:hover {
+          background-color: v.$color2;
+          border-radius: 10px;
+          color: v.$color1;
+          cursor: pointer;
+        
+        }
+      }
+
+   .logout-btn{
+     width: 100% ;
+     border-radius: 10px;
+     border:none;
+     color:v.$color2;
+     text-align: left;
+     padding: 5px 50px;
+     margin-top: 5px; 
+     cursor: pointer;
+     background-color: v.$color5;
+
+     &:hover {
+       background-color: v.$color2;
+       color:v.$color1;
+   
+     }
+  
+     .logout-icon{
+      //  font-size: 20px;
+       margin-left: 5px;
+       margin-top: -4px;
+     }
+    
+  
+   } 
+  
+  }
+}

@@ -1,0 +1,87 @@
+@use "../../../../styles/variables" as v;
+
+.admin-contact-message-search-container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  
+
+  @media screen and (max-width: 500px) {
+    display: block;
+    .search-input {
+      margin-bottom: 10px;
+      width: 100% !important;
+    }
+  }
+
+  .search-input {
+    input {
+      border-radius: 10px !important;
+      padding: 12px;
+      border-right: 0;
+      border-color: gray;
+      background-color: v.$color5-light;
+      position: relative;
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    .clear-wrapper {
+      background: v.$color5-light;
+      border-left: 0;
+      border-bottom: gray !important;
+      border-top: gray !important;
+      position: absolute;
+      right: 85px !important;
+      top: 0 !important;
+      bottom: 0 !important;
+      z-index: 99;
+      padding: 0;
+      margin: 0;
+      .clear-btn {
+        position: absolute !important;
+        border: none !important;
+        border-radius: 50%;
+        padding: 6px 8px;
+        color: black;
+        margin-right: 10px;
+
+        &:hover {
+          background: none;
+          color: v.$color-error-light;
+          transform: scale(1.2);
+        }
+      }
+    }
+    .search-button {
+      border-radius: 10px !important;
+      background-color: v.$color8;
+      color: white;
+      &:hover {
+        background-color: v.$color1;
+        color: white;
+      }
+    }
+    button {
+      border: 1px solid gray;
+      padding: 10px 15px;
+    }
+    /*ESKİ YÖNTEM */
+    // display: flex;
+    // align-items: center;
+    // width: 75%;
+    // input {
+    //   border-radius: 20px;
+    //   padding: 15px;
+    //   width: 100%;
+    // }
+    // .search-icon {
+    //   margin-left: 10px;
+    //   padding: 15px;
+    //   border-radius: 20px;
+    //   position: absolute;
+    //   right: 25%;
+    // }
+  }
+}

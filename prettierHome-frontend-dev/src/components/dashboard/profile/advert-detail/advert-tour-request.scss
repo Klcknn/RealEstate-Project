@@ -1,0 +1,82 @@
+@use "../../../../styles/variables" as v;
+
+.advert-tour-request-container {
+  background-color: v.$color11;
+  border-radius: 15px;
+  margin-top: 38px !important;
+  padding: 15px;
+  min-width: 200px;
+  box-shadow: 0 0 3px v.$color9;
+
+  .advert-tour-request-form {
+    flex-direction: column;
+    margin: 0;
+    .advert-tour-request-row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      display: flex;
+      justify-content: center;
+      .advert-tour-request-form-group-row {
+       
+        .adverts-tour-request-form-group{
+          position: relative;
+          padding-left:0;
+          padding-right:0;
+          input {
+            border-radius: 3px;
+            background-color: v.$color6;
+            border: 1px solid v.$color9;
+            
+          }
+            .invalid-feedback {
+              font-size: 0.9rem;
+              font-weight: normal;
+              position: absolute;
+              bottom: -20px;
+              right: -10px;
+              color: rgb(232, 63, 2);
+            
+            }
+            .is-valid {
+              border-color: v.$color6;
+            
+            }
+            &:active,
+            &:focus {
+              box-shadow: 0 0 3px v.$color7;
+              transition: border 0.2s;
+            }
+          
+          select {
+            border-radius: 3px;
+            background-color: v.$color6;
+            border: 1px solid v.$color9;
+            padding: 6px;
+            &:active,
+            &:focus {
+              box-shadow: 0 0 3px v.$color7;
+              transition: border 0.2s;
+            }
+          }
+     
+        }
+      }
+      
+      .btn {
+        width: 100% !important;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px !important;
+      }
+      svg {
+        margin-right: 5px;
+      }
+      
+     
+
+     
+    }
+  }
+}

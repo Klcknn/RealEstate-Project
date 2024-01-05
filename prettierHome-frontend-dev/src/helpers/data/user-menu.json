@@ -1,0 +1,25 @@
+{
+  "admin": [
+    { "title": "Dashboard", "link": "/dashboard", "icon": "RiDashboardLine" },
+    { "title": "Adverts", "link": "/dashboard/adverts", "icon": "RiHome3Line" },
+    { "title": "Categories", "link": "/dashboard/categories", "icon": "RiListSettingsLine" },
+    { "title": "Advert Types", "link": "/dashboard/advert-types", "icon": "RiAdvertisementLine" },
+    { "title": "Users", "link": "/dashboard/users", "icon": "RiUserLine" },
+    { "title": "Tour Requests", "link": "/dashboard/tour-requests", "icon": "RiFileList2Line" },
+    { "title": "Reports", "link": "/dashboard/reports", "icon": "RiBarChart2Line" },
+    { "title": "Contact Messages", "link": "/dashboard/contact-messages", "icon": "RiMailLine" },
+    { "title": "Web Site", "link": "/", "icon": "RiGlobeLine" },
+    { "title": "Settings", "link": "/dashboard/settings", "icon": "RiSettings5Line" }
+  ],
+  "manager": [
+    { "title": "Dashboard", "link": "/dashboard", "icon": "RiDashboardLine" },
+    { "title": "Adverts", "link": "/dashboard/adverts", "icon": "RiHome3Line" },
+    { "title": "Categories", "link": "/dashboard/categories", "icon": "RiListSettingsLine" },
+    { "title": "Advert Types", "link": "/dashboard/advert-types", "icon": "RiAdvertisementLine" },
+    { "title": "Users", "link": "/dashboard/users", "icon": "RiUserLine" },
+    { "title": "Tour Requests", "link": "/dashboard/tour-requests", "icon": "RiFileList2Line" },
+    { "title": "Reports", "link": "/dashboard/reports", "icon": "RiBarChart2Line" },
+    { "title": "Contact Messages", "link": "/dashboard/contact-messages", "icon": "RiMailLine" },
+    { "title": "Web Site", "link": "/", "icon": "RiGlobeLine" }
+  ]
+}

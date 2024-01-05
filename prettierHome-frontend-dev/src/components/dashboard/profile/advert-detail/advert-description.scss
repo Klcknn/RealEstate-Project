@@ -1,0 +1,42 @@
+@use "../../../../styles/variables" as v;
+
+.description-container {
+  background-color: v.$color5-light;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  min-width: 200px;
+  box-shadow: 0 0 3px v.$color5;
+
+  .description-title {
+    font-size: 1.4rem;
+    margin-left: 16px;
+    color: v.$color7;
+  }
+  .description-row {
+    margin: 16px;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    text-align: justify;
+  }
+  .location-title {
+    font-size: 1.4rem;
+    margin-left: 16px;
+    color: v.$color7;
+    margin-bottom: 0;
+  }
+  .location-col {
+    margin: 16px;
+    display: flex;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  .leaflet-container {
+    border-radius: 15px;
+    box-shadow: 0 0 5px v.$color7;
+    @media screen and (max-width: 500px) {
+      height: 250px !important;
+    }
+  }
+}

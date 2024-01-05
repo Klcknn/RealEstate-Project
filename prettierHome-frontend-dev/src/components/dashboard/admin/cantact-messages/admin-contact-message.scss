@@ -1,0 +1,15 @@
+@use "../../../../styles/variables" as v;
+
+.admin-contact-message-container {
+  width: 90% !important;
+  min-height: 420px !important;
+  .accordion-button {
+    display:flex!important;
+    justify-content:space-between!important;
+   
+  }
+  .accordion-button::after {
+    margin-left: 0 !important;
+   
+  }
+}
